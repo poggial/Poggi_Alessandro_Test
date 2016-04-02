@@ -1,5 +1,7 @@
 # Poggi_Alessandro_Test
 Assessment Test SOA
+
+
 Premessa:
 
 Il progetto è stato sviluppato su Windows 10 /Linux Mint 15 (versione iniziale) e testato su Windows7/10  con browser Google Chrome e Microsoft Edge sia in modalità normale che in incognito.
