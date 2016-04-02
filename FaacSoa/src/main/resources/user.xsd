@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns="http://faac.com/soa/ws/users"
+	 targetNamespace="http://faac.com/soa/ws/users"
+	elementFormDefault="qualified" attributeFormDefault="qualified">
+	<xsd:complexType name="User">
+		<xsd:sequence>
+			<xsd:element name="username" type="xsd:string" minOccurs="1" />
+		</xsd:sequence>
+	</xsd:complexType>
+<xsd:element name="getUsersRequest">
+  <xsd:complexType>
+    </xsd:complexType>
+</xsd:element>
+	<xsd:element name="getUsersResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+               <xsd:element name="user" type="User"
+						minOccurs="0" maxOccurs="unbounded" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+	
+	
+</xsd:schema>

@@ -1,0 +1,51 @@
+<div class="panel panel-info">
+	<div class="panel-heading">
+		<div class="panel-title">Log in</div>
+	</div>
+<div class="alert alert-danger" ng-show="controller.error">There
+	was a problem logging in. Please try again.</div>
+<!-- <form role="form" ng-submit="controller.login()">
+	<div class="form-group">
+		<label for="username">Username:</label> <input type="text"
+			class="form-control" id="username" name="username"
+			ng-model="controller.credentials.username" />
+	</div>
+	<div class="form-group">
+		<label for="password">Password:</label> <input type="password"
+			class="form-control" id="password" name="password"
+			ng-model="controller.credentials.password" />
+	</div>
+	<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+ -->
+	<div style="padding-top: 30px" class="panel-body">
+		<form id="loginform" class="form-horizontal" role="form" ng-submit="controller.login()">
+
+			<div style="margin-bottom: 25px" class="input-group">
+				<span class="input-group-addon"><i
+					class="glyphicon glyphicon-user"></i></span> <input id="username"
+					type="text" class="form-control" name="username" value=""
+					placeholder="username" ng-model="controller.credentials.username">
+			</div>
+
+			<div style="margin-bottom: 25px" class="input-group">
+				<span class="input-group-addon"><i
+					class="glyphicon glyphicon-lock"></i></span> <input id="password"
+					type="password" class="form-control" name="password"
+					placeholder="password" ng-model="controller.credentials.password" >
+			</div>
+			
+			<div style="margin-top: 10px" class="form-group">
+				<!-- Button -->
+
+				<div class="col-sm-12 controls">
+				<button type="submit" class="btn btn-success">Login</button>
+				</div>
+			</div>
+			
+		</form>
+	</div>
+</div>
+
+
+
