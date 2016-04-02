@@ -19,10 +19,11 @@ username: utente1@faac.com password:utente1 ... username: utenteN@faac.com passw
 * Deployare il war del progetto 
 
 Il progetto sarà accessibile all'indirizzo locale (o di macchina):
+
 http://localhost:8080/FaacSoa/
-
 per la parte di front-end / rest.
-Per la parte ws-soap sarà possibile accedere all'indirizzo :
-http://localhost:8080/FaacSoa/ws/users.wsdl
 
+Per la parte ws-soap sarà possibile accedere all'indirizzo :
+
+http://localhost:8080/FaacSoa/ws/users.wsdl
 Utilizzando uno strumento come soap ui sarà facilmente possibile importare il progetto e testare la chiamata
