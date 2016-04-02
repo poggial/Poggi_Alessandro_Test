@@ -12,6 +12,8 @@ Istruzioni:
 * eseguire la query create_users.sql all'interno della directory query
 * configurare opportunamente il file config.properties nella directory src/main/resources per l'accesso al proprio db
 * (facoltativo) configurare il file di log log4j2.config nella directory src/main/resources
+* Per potersi autenticare al servizio è necessario popolare la tabella degli utenti che avrà una struttura a colonne user_id, email,username,password. le chiavi di autenticazione al servizio sono email e password (la password su db non è stata criptata). E' possibile inserire a mano questi dati, oppure utilizzando uno unit Test di prova che popola automaticamente la tabella seguendo questo standard:
+username: utente1@faac.com password:utente1 ... username: utenteN@faac.com password:utenteN    dove N sta per numero progressivo
 * Deployare il war del progetto 
 
 Il progetto sarà accessibile all'indirizzo locale (o di macchina) http://localhost:8080/FaacSoa/  
